@@ -5,7 +5,6 @@ export default function paginationField() {
     keyArgs: false,
 
     read(existing = [], { args, cache }) {
-      console.log({ existing, args, cache });
       const { skip, first } = args;
       // Read the numbers of items on the page from the cache
       const data = cache.readQuery({ query: PAGINATION_QUERY });
