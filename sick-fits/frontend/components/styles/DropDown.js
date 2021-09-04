@@ -20,6 +20,9 @@ const DropDownItem = styled.div`
   img {
     margin-right: 10px;
   }
+  &:hover {
+    background-color: red;
+  }
 `;
 
 const glow = keyframes`

@@ -1,4 +1,5 @@
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Dot = styled.div`
@@ -11,6 +12,7 @@ const Dot = styled.div`
   margin-left: 1rem;
   font-feature-settings: 'tnum';
   font-variant-numeric: tabular-nums;
+  font-size: 1.5rem;
 `;
 const AnimationStyles = styled.span`
   position: relative;
@@ -52,3 +54,7 @@ export default function CartCount({ count }) {
     </AnimationStyles>
   );
 }
+
+CartCount.propTypes = {
+  count: PropTypes.number,
+};

@@ -11,8 +11,6 @@ const DELETE_PRODUCT_MUTATION = gql`
   }
 `;
 function update(cache, payload) {
-  console.log(payload);
-  console.log('Runing update function after delete');
   cache.evict(cache.identify(payload.data.deleteProduct));
 }
 export default function DeleteProduct({ id, children }) {

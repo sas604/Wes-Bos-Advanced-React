@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import formatMoney from '../lib/formatMoney';
+import RemoveProductFromCart from './RemoveProductFromCart';
 
 const CartItemStyles = styled.li`
   padding: 1rem 0;
@@ -34,6 +35,7 @@ export default function CartItem({ cartItem }) {
           </em>
         </p>
       </div>
+      <RemoveProductFromCart id={cartItem.id} />
     </CartItemStyles>
   );
 }

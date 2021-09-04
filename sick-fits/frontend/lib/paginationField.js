@@ -26,7 +26,6 @@ export default function paginationField() {
 
       // If there are items, just return them from the cache, and we don't need to go to the network
       if (items.length) {
-        console.log(items.length);
         return items;
       }
       return false;
@@ -39,7 +38,6 @@ export default function paginationField() {
       for (let i = skip; i < skip + incoming.length; i++) {
         merged[i] = incoming[i - skip];
       }
-      console.log(merged);
       return merged;
     },
   };
