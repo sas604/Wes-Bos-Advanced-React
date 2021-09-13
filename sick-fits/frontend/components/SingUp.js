@@ -27,7 +27,7 @@ export default function SingUp() {
 
   const [signUp, { loading, data, error }] = useMutation(SINGN_UP_MUTATION, {
     variables: inputs,
-    // refetchQueries: [{ query: CURRENT_USER_QUERY }],
+    refetchQueries: [{ query: CURRENT_USER_QUERY }],
   });
   async function handleSubmit(e) {
     e.preventDefault();
