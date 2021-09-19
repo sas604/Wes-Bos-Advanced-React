@@ -8,7 +8,7 @@ import {
 import { loadStripe } from '@stripe/stripe-js';
 import gql from 'graphql-tag';
 import { useRouter } from 'next/dist/client/router';
-import nProgress, { set } from 'nprogress';
+import nProgress from 'nprogress';
 import { useState } from 'react';
 import styled from 'styled-components';
 import { useCart } from '../lib/cartState';

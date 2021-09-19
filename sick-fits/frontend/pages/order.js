@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useQuery } from '@apollo/client';
 import gql from 'graphql-tag';
 import Head from 'next/head';
@@ -80,3 +81,9 @@ export default function OrderPage({ query }) {
     </>
   );
 }
+
+OrderPage.propTypes = {
+  query: PropTypes.shape({
+    id: PropTypes.string,
+  }),
+};
